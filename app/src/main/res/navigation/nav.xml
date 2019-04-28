@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav"
+            app:startDestination="@id/catalogFragment">
+
+    <fragment android:id="@+id/catalogFragment" android:name="com.dobler.simplemovieskt.ui.discover.DiscoverFragment"
+              android:label="catalog_fragment" tools:layout="@layout/discover_fragment">
+        <action android:id="@+id/action_catalogFragment_to_detailfFragment" app:destination="@id/detailfFragment"/>
+    </fragment>
+    <fragment android:id="@+id/detailfFragment" android:name="com.dobler.simplemovieskt.ui.detail.DetailfFragment"
+              android:label="detailf_fragment" tools:layout="@layout/detailf_fragment"/>
+</navigation>
